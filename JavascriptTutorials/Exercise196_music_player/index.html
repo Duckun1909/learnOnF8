@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header row justify-content-space-between align-item-center">
+                <div class="header_item">
+                    <i class="fa-solid fa-angle-down fs-15 color1"></i>
+                </div>
+                <div class="header_item text-align-center">
+                    <h6 class="fs-1 color1">Now playing</h6>
+                    <h3 class="fs-1">Sting 57th & 9th</h3>
+                </div>
+                <div class="header_item">
+                    <i class="fa-solid fa-plus fs-15 color1"></i>
+                </div>
+            </div>
+        </header>
+        <body>
+            <div class="body">
+                <div class="body_item">
+                    <div class="body_item-disc">
+                        <div class="disc-image"></div>
+                        <svg class="circle" width="230px" height="230px">
+                            <circle class="progress-circle" cx="115" cy="115" r="92"/>
+                        </svg>
+                    </div>
+                    <div class="body_item-taskbar row justify-content-space-between align-item-center">
+                        <div class="taskbar-replay text-align-center" onclick="replay()"  title="Replay"><i class="fa-solid fa-rotate-right fs-13"></i></div>
+                        <div class="taskbar-previous text-align-center" onclick="previous()"  title="Previous"><i class="fa-solid fa-backward-step fs-13"></i></div>
+                        <div class="taskbar-play text-align-center"  title="Play"><i class="fa-solid fa-play fs-13 lh-50 d-block"></i></div>
+                        <div class="taskbar-next text-align-center" onclick="next()"  title="Next"><i class="fa-solid fa-forward-step fs-13"></i></div>
+                        <div class="taskbar-shuffle text-align-center"  title="Shuffle"><i class="fa-solid fa-shuffle fs-13"></i></div>
+                    </div>
+                    <div class="body_item-progress p-10">
+                        <input type="range" max="" value="0" class="progress-music" disabled="true">
+                    </div>
+                </div>
+                <div class="body_item">
+                    <div class="body_item-upnext fs-1">Up next</div>
+                    <div class="body_item-songlist">
+                        
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <audio src="" id="musicBox" type="audio/mp3" class="d-none"></audio>
+        </footer>
+    </div>
+
+<script src="./core.js"></script>
+</body>
+</html>

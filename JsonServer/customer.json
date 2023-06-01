@@ -1,0 +1,16 @@
+{
+  "customer": [
+    {
+      "fullname": "",
+      "email": "ducleader2003@gmail.com",
+      "password": "111111",
+      "id": 1
+    },
+    {
+      "fullname": "phạm huỳnh đức",
+      "email": "ducleader2003@gmail.com",
+      "password": "111111",
+      "id": 2
+    }
+  ]
+}

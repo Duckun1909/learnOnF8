@@ -1,0 +1,256 @@
+/* Common Css */
+/* Flex layout */
+.row {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fluid {
+  margin: unset;
+}
+.col-5{
+  width: 20%;
+  max-width: 20%;
+  margin: 0px 10px;
+}
+.col-6{
+  width: 50%;
+  max-width: 50%;
+  margin: 0px 10px;
+}
+.col-3{
+  width: 25%;
+  max-width: 25%;
+  margin: 0px 10px;
+}
+.col-2{
+  width: 16.66667%;
+  max-width: 16.66667%;
+  margin: 0px 10px;
+}
+.col-8{
+  width: 86.67%;
+  max-width: 86.67%;
+  margin: 0px 10px;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+.align-item-center {
+  align-items: center;
+}
+.text-align-center {
+  text-align: center;
+}
+
+/* Font size */
+.fs-05 {
+  font-size: 0.5rem;
+}
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-13{
+  font-size: 1.3rem;
+}
+.fs-15 {
+  font-size: 1.5rem;
+}
+.fs-2 {
+  font-size: 2rem;
+}
+.fs-25 {
+  font-size: 2.5rem;
+}
+
+/* Color */
+:root {
+  --color-1: #ee276a;
+  --color-2: #8a84b7;
+  --color-3: #f3f3f7;
+}
+.color1 {
+  color: #ee276a;
+}
+.back-color1 {
+  background-color: #ee276a;
+}
+
+/* Margin, padding */
+.m-auto{
+  margin: auto;
+}
+.p-10{
+  padding: 10px;
+}
+
+/* Text */
+.lh-50{
+  line-height: 50px !important;
+}
+
+/* Display */
+.d-block{
+  display: block !important;
+}
+.d-none{
+  display: none;
+}
+
+.container {
+  width: 30%;
+  max-width: 30%;
+  margin: auto;
+  border: 1px solid #8a84b7;
+  border-radius: 4px;
+}
+
+/* Header Css */
+.header_item h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Body Css */
+.body .body_item:first-child {
+}
+
+.body_item-disc{
+    position: relative;
+    padding: 15px 0px;
+}
+.disc-image {
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.Wcpl57IPNan3Ob3V1hXEnAHaHa&pid=Api&P=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+}
+
+.circle{
+  position: absolute;
+  left: 25%;
+  top: -9px;
+  transform: rotate(270deg);
+}
+
+.progress-circle {
+  fill: none;
+  stroke: var(--color-1);
+  stroke-width: 6;
+  stroke-linecap: square;
+  stroke-dasharray: 577.76;
+  stroke-dashoffset: 577.76;
+}
+.progress-music{
+  width: 100%;
+}
+
+@keyframes circle-progress {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes disc-image-rotate {
+    to{
+      transform: rotate(360deg);
+    }
+}
+
+.body_item-taskbar{
+    margin: 10px 0px;
+    padding-bottom: 10px;
+}
+.body_item-taskbar div{
+    color:var(--color-2);
+    cursor:pointer;
+    line-height: 50px;
+    width: 50px;
+}
+.body_item-taskbar .taskbar-play{
+  color: #fff;
+  background-color: var(--color-1);
+  border-radius: 50%;
+}
+.body_item-taskbar .taskbar-replay.taskbar-replay--active{
+  color: var(--color-1)
+}
+
+
+.body .body_item:last-child{
+  position: relative;
+  background-color: var(--color-3);
+  margin: 10px 0px;
+}
+.body_item-upnext{
+    position: absolute;
+    top:-9px;
+    left:50%;
+    color: var(--color-2);
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 25px;
+    transform: translateX(-50%);
+    /* box-shadow: 0px 0px 5px #c0b1b1a3; */
+    padding: 0px 10px;
+    cursor: row-resize;
+    z-index: 1;
+    border-bottom: 1px solid #c0b1b1a3;
+}
+
+.body_item-songlist{
+  padding: 10px 0px;
+  height: 400px;
+  max-height: 400px;
+  overflow: auto;
+}
+.body_item-songlist::-webkit-scrollbar{
+  display: none;
+}
+.body_item-songlist .songlist-item{
+  padding: 10px 10px;
+  margin: 10px 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px #c0b1b13d;
+  cursor: pointer;
+  opacity: .7;
+}
+.body_item-songlist .songlist-item.songlist-item--active{
+  opacity: 1;
+}
+.songlist-item-title h2{
+  font-weight: 700;
+}
+.songlist-item-title h6{
+  color: var(--color-2);
+}
+.songlist-item-title h2,
+.songlist-item-title h6{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 255.78px
+}
+
+.songlist-item-img div{
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

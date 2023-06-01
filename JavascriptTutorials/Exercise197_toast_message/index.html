@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Message</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="body">
+        
+    </div>
+
+    <div id="btn-list">
+        <button class="button button--success">Success</button>
+        <button class="button button--warning">Warning</button>
+        <button class="button button--question">Question</button>
+    </div>
+</body>
+<script>
+    const messList = document.querySelector("#body")
+    const mess = document.querySelector(".body_item")
+    const btnSuccess = document.querySelector(".button--success")
+    const btnWarning = document.querySelector(".button--warning")
+    const btnQuestion = document.querySelector(".button--question")
+    let index = 0;
+
+    let objectLst = [
+        {
+            title: 'Yay! Everything worked!',
+            text: 'Congrats on the internet loading your request.',
+            icon: 'fa-check',
+            type: 'success'
+        },
+        {
+            title: 'Uh oh, something went wrong',
+            text: 'Sorry! There was a problem with your request.',
+            icon: 'fa-exclamation',
+            type: 'warning'
+        },
+        {
+            title: 'Did you know?',
+            text: 'Here is something that you might like to know.',
+            icon: 'fa-info',
+            type: 'question'
+        },
+    ]
+
+    function showMessage({
+        title,
+        text,
+        icon,
+        type
+    }){
+        var item = document.createElement("div")
+        item.setAttribute("class", `body_item ${type}`)
+        item.setAttribute("style", "animation: showMess .5s linear forwards,hideMess 1s 5s linear")
+        item.setAttribute("data-index", index)
+        item.innerHTML = `
+            <div class="body_item-icon m-10-lr"><i class="fa-solid ${icon}"></i></div>
+                <div class="body_item-text m-10-lr">
+                    <b>${title}</b>
+                    <h6>${text}</h6>
+                </div>
+            <div class="body_item-cancle m-10-lr"><i class="fa-solid fa-xmark"></i></div>
+        `
+        messList.appendChild(item)
+        setTimeout(function(){
+            item.remove()
+        },6000)
+    }
+
+    btnSuccess.onclick = function(){
+        showMessage(objectLst[0])
+    }
+    btnWarning.onclick = function(){
+        showMessage(objectLst[1])
+    }
+    btnQuestion.onclick = function(){
+        showMessage(objectLst[2])
+    }
+
+</script>
+</html>

@@ -1,0 +1,109 @@
+{
+  "music": [
+    {
+      "name": "1 PHÚT",
+      "author": "Andiez",
+      "mp3": "./assets/1phut.mp3",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Pwbt9SM5ZLWZm0Dfp4XUzQAAAA&pid=Api&P=0",
+      "id": 1
+    },
+    {
+      "name": "Anh chẳng thể",
+      "author": "Phạm Kỳ x Dino 「Lo - Fi Version by Hạ Sang」",
+      "mp3": "./assets/anhchangthe.mp3",
+      "image": "https://avatar-ex-swe.nixcdn.com/song/2021/01/11/6/9/4/a/1610340178928_500.jpg",
+      "id": 2
+    },
+    {
+      "name": "Bên trên tầng lầu",
+      "author": "Tăng Duy Tân",
+      "mp3": "./assets/bentrentanglau.mp3",
+      "image": "https://avatar-ex-swe.nixcdn.com/song/2022/06/09/d/4/5/e/1654766693061_500.jpg",
+      "id": 3
+    },
+    {
+      "name": "Cám Dỗ",
+      "author": "Hứa Kim Tuyền",
+      "mp3": "./assets/camdo.mp3",
+      "image": "https://tse4.mm.bing.net/th?id=OIP._wos3FLSwgWXr86waOF0ewHaD4&pid=Api&P=0",
+      "id": 4
+    },
+    {
+      "name": "Cho Con Được Thay Cha",
+      "author": "Yến Lê",
+      "mp3": "./assets/choconthaychameoi.mp3",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.NQ9xcTKgSqShRQc7d9eGcwHaEK&pid=Api&P=0",
+      "id": 5
+    },
+    {
+      "name": "Chờ Đợi Có Đáng Sợ",
+      "author": "Andiez",
+      "mp3": "./assets/chodoicodangso.mp3",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.ykULOGm2FxFikf1iRc4DpQHaHa&pid=Api&P=0",
+      "id": 6
+    },
+    {
+      "name": "Có Người Mashup Góc Ban Công",
+      "author": "Vũ Cát Tường",
+      "mp3": "./assets/conguoi&gocbancong.mp3",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.zRyIqrHYxIBIvM-TKDCr9QHaEK&pid=Api&P=0",
+      "id": 7
+    },
+    {
+      "name": "Định Mệnh",
+      "author": "Noo Phước Thịnh",
+      "mp3": "./assets/dinhmenh.mp3",
+      "image": "https://avatar-ex-swe.nixcdn.com/song/2022/12/18/5/4/2/a/1671374586619_500.jpg",
+      "id": 8
+    },
+    {
+      "name": "Kiếp Nào Có Yêu Nhau",
+      "author": "Phạm Duy",
+      "mp3": "./assets/kiepnaocoyeunhau.mp3",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.zptr8g3YGFdVBn3uZSx2MgHaEK&pid=Api&P=0",
+      "id": 9
+    },
+    {
+      "name": "Người Như Anh",
+      "author": "Hùng Quân",
+      "mp3": "./assets/nguoinhuanh.mp3",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.q0E0qFoZiZWCojTg_1L4jAHaEK&pid=Api&P=0",
+      "id": 10
+    },
+    {
+      "name": "Như Anh Đã Thấy Em",
+      "author": "PhucXp ft. Freak D",
+      "mp3": "./assets/nhuanhdathayem.mp3",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.drqiwUBCGnHSivz92N-j5AHaEE&pid=Api&P=0",
+      "id": 11
+    },
+    {
+      "name": "Nửa Thập Kỷ",
+      "author": "Hoàng Dũng",
+      "mp3": "./assets/nuathapky.mp3",
+      "image": "https://avatar-ex-swe.nixcdn.com/song/2020/12/14/5/c/b/a/1607937777024_500.jpg",
+      "id": 12
+    },
+    {
+      "name": "Việt Nam Trong Tôi Là",
+      "author": "Yến Lê",
+      "mp3": "./assets/vietnamtrongtoila.mp3",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.q092Jno9ySerVaYQ-Q_K0QHaEK&pid=Api&P=0",
+      "id": 13
+    },
+    {
+      "name": "Vũ Điệu Gió",
+      "author": "Vũ Minh Tâm",
+      "mp3": "./assets/vudieugio.mp3",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.JUSmToDf8iExpVXs6IGRSgHaEK&pid=Api&P=0",
+      "id": 14
+    },
+    {
+      "name": "Yêu Xa",
+      "author": "Vũ Cát Tường",
+      "mp3": "./assets/yeuxa.mp3",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.D80p7a6KXu3x4MU0i-1IcAAAAA&pid=Api&P=0",
+      "id": 15
+    }
+  ]
+}

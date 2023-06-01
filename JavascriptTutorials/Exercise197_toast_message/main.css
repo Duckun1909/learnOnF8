@@ -1,0 +1,137 @@
+#body{
+    width: fit-content;
+    margin: auto;
+    position: fixed;
+    left: 100%;
+}
+h6{
+    margin:unset;
+    padding: unset;
+}
+.m-10-lr{
+    margin: 0px 10px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 465px;
+    height: 70px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+.body_item::before{
+    content:"";
+    display: block;
+    width: 5px;
+    height: 80%;
+    border-radius: 2px;
+    position: absolute;
+}
+.body_item-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    padding: 5px;
+    margin-left: 20px;
+}
+.body_item-text b{
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+}
+.body_item-text h6{
+    font-size: 16px;
+    word-wrap: unset;
+    white-space: nowrap;
+    color: grey;
+    font-weight: 500;
+}
+
+.body_item-cancle{
+    color: grey;
+    cursor: pointer;
+}
+.body_item-cancle i{
+    font-size: 20px;
+}
+.body_item-cancle:hover{
+    color: rgb(240, 216, 216);
+    transition: all .1s linear;
+}
+
+.body_item.question::before
+,.body_item.question .body_item-icon{
+    background-color: #007bc2;
+}
+.body_item.warning::before
+,.body_item.warning .body_item-icon{
+    background-color: #f0a92e;
+}
+.body_item.success::before
+,.body_item.success .body_item-icon{
+    background-color: #21a67a;
+}
+
+
+#btn-list{
+    width: fit-content;
+    margin: auto;
+}
+#btn-list .button{
+    padding: 10px 30px;
+    border: unset;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+#btn-list .button:hover{
+    opacity: .8;
+    transition: all .2s linear;
+}
+.button--success{
+    background-color: #21a67a;
+}
+.button--warning{
+    background-color: #f0a92e;
+}
+.button--question{
+    background-color: #007bc2;
+}
+
+
+/* animation */
+@keyframes showMess{
+    100%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes hideMess{
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+

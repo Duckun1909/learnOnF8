@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .updateStudent:active{
+            background-color: aliceblue !important;
+            font-size: 13px;
+        }
+
+        .deleteStudent:active{
+            background-color: aqua !important;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: auto; width: fit-content;">
+        <div class="header">
+            <h1>Student Management Application</h1>
+        </div>
+        <div class="body">
+            <div style="margin-bottom: 10px;">
+                <table class="studentInfo" border="1" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Date of birth</th>
+                        <th>Class</th>
+                        <th>Average</th>
+                        <th>Option</th>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <form id="studentForm" style="display: flex; flex-wrap: wrap;" >
+                <div style="width: fit-content; padding-right: 5px;"><label for="">Name:</label><input type="text" name="name"></div>
+                <div style="width: fit-content; padding-right: 5px;"><label for="">Date of birth:</label><input type="text" name="dob"></div>
+                <div style="width: fit-content; padding-right: 5px;"><label for="">Class:</label><input type="text" name="class"></div>
+                <div style="width: fit-content; padding-right: 5px;"><label for="">Average:</label><input type="text" name="average"></div>
+                <div style="width: fit-content;"><button type="button" onclick="handleCreateForm()" id="mod">Add</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,11 @@
+*{
+    font-size: 1rem;
+    padding: unset;
+    margin: unset;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
