@@ -1,0 +1,395 @@
+/* Common Class */
+.section-width{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 64px 16px;
+}
+.section-width h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.section-width i{
+    opacity: .6;
+    display: block;
+}
+.section-width .margin-item{
+    margin: 15px 0px
+} 
+
+/* Reset CSS */
+*{
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Header */
+header{
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar nav a{
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.search .icofont-search-1, .search .icofont-navigation-menu{
+    color: #fff;
+    cursor: pointer;
+    padding: 0px 24px;
+    line-height: 46px;
+}
+.search:hover{
+    background-color: #f44336;
+}
+.multi-bar{
+    position: relative;
+    display: inline-block;
+}
+.multi-bar:hover>a{
+    background-color: #ccc;
+    color: #000;
+}
+.multi-bar .bar_gear2{
+    min-width: 160px;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    right: -52px;
+    z-index: 1;
+}
+.multi-bar .bar_gear2 a{
+    display: block;
+    color: #000;
+    text-transform: none;
+}
+.multi-bar:hover .bar_gear2{
+    display: block;
+}
+
+/* Slider */
+.slider{
+    width: 100%;
+    height: 50vw;
+    margin-top: 46px;
+}
+.slider>div{
+    display: flex;
+    height: inherit;
+}
+.slide-item{
+    position: relative;
+    width: 100%;
+    display: none;
+    height: inherit;
+}
+.slide-item div{
+    position: relative;
+    top: -140px;
+    text-align: center;
+}
+.slide-item.autoplay{
+    display: block;
+}
+.slider h3, .slider p{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.slide-item p{
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+}
+
+/* The Band */
+#the_band h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+#the_band p{
+    text-align: justify;
+}
+/* .margin-item{
+    margin: 15px 0px
+} */
+.band-members{
+    display: flex;
+    padding: 32px 0px;
+}
+.band-members span{
+    display: block;
+    margin: 15px 0px;
+}
+.band-members img{
+    margin-bottom: 15px 0px;
+    border-radius: 4px;
+}
+
+/* Tour Dates */
+#tour_date{
+    background-color: #000;
+}
+#tour_date ul{
+    text-align: left;
+    color: rgba(0, 0, 0, .6);
+    background-color: #fff;
+}
+#tour_date ul li{
+    list-style-type: none;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+}
+.sold-out-ticket{
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 15px;
+    padding: 5px 8px;
+}
+.ticket-par{
+    position: absolute;
+    display: inline-block;
+    right: 32px;
+}
+.ticket-left{
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 5px 9px;
+    right: 0px;
+}
+.item-par{
+    display: flex;
+    margin: 30px -8px;
+}
+.item-par .place-item{
+    padding: 0px 8px;
+    width: 33.3333%;
+    box-sizing: border-box;
+}
+.place-item div{
+    padding: 0px 16px;
+    background-color: #fff;
+    text-align: left;
+}
+.place-item div b{
+    display: block;
+    padding-top: 15px;
+}
+.place-item div>*{
+    margin-bottom: 15px;
+}
+.place-item div span{
+    display: block;
+    color: rgba(0, 0, 0, .6);
+    white-space: nowrap;
+}
+.submit-btn{
+    margin-top: unset;
+    background-color: #000;
+    color: #fff;
+    border: unset;
+    padding: 8px 16px;
+}
+.submit-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.place-item img:hover{
+    opacity: .6;
+    transition: all .3s ease;
+}
+
+/* Contact Us */
+#contact_us>div>div{
+    display: flex;
+    padding: 32px 0px;
+}
+.address, .contact-form{
+    padding: 16px;
+    padding: unset;
+    width: 50%;
+}
+.address div{
+    display: flex;
+    align-items: center;
+}
+.address div span{
+    font-size: 18px;
+    display: block;
+}
+.address div i{
+    padding-right: 15px;
+    font-size: 18px;
+}
+.contact-form form input{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc
+}
+.contact-form form>div:first-child{
+    display: flex;
+    margin: 0px -8px 8px;
+    width: fit-content;
+}
+.infor-btn{
+   padding: 0px 8px;
+   width: 100%;
+}
+.contact-form form>div:nth-child(2) input{
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    opacity: .6;
+    padding: 64px 16px;
+}
+footer i{
+    font-size: 24px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer p{
+    margin: 16px 0px;
+}
+
+/* Form Buy Ticket */
+#form-buy-ticket{
+    display: none;
+    z-index: 3;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.ticket-container{
+    max-width: 800px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 100px auto;
+    animation: slideIn .4s;
+}
+@keyframes slideIn{
+    from{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.ticket-container .head-form{
+    background-color: #009688;
+    padding: 32px 16px;
+    position: relative;
+}
+.ticket-container .head-form div{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.ticket-container .head-form div>*{
+    margin:0px 8px;
+    font-size: 50px;
+    color: #fff;
+}
+.ticket-container .head-form div h2{
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-family: "Segoe UI",Arial,sans-serif;;
+}
+.ticket-container .head-form>i{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
+}
+.ticket-container .head-form>i:hover{
+    color: #000;
+}
+.body-form{
+    padding: 0px 16px;
+    background-color: #fff;
+}
+.infor-pay{
+    font-family: "Lato", sans-serif;
+    padding: 15px 0px;
+}
+.infor-pay-btn{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: unset;
+}
+.pay-btn{
+    padding: 16px 0px;
+    background-color: #009688;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.btns:hover{
+    background-color: #ccc;
+    color: #000;
+    transition: all .3s ease;
+}
+.help-btn{
+    position: relative;
+    padding: 16px 0px;
+}
+.help-btn button{
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    border: unset;
+    display: flex;
+    align-items: center;
+}
+.help-btn span{
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}

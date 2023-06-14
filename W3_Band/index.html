@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3_band</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyuL5D6NRo3QcPAm-Trk08N_Et3-h2XmIFeg&usqp=CAU" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/font_icon/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./assets/the_band_reponsive.css">
+    <style>
+        .side-bar{
+            background: #000;
+            position: fixed;
+            top: 46px;
+            width: 100%;
+            transform: translateY(-100%);
+        }
+        .side-bar a{
+            position: relative;
+            display: block;
+            color: #fff;
+            padding: 12px 24px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .side-bar a:hover{
+            background: #ccc;
+            color: #000;
+        }
+        @keyframes slide-in-side-bar{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        @keyframes slide-out-side-bar{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body style="font-family:Lato, sans-serif;">
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#the_band">Band</a>
+                    <a href="#tour_date">Tour</a>
+                    <a href="#contact_us">Contact</a>
+                    <div class="multi-bar">
+                        <a>More<i class="icofont-caret-down"></i></a>
+                        <div class="bar_gear2">
+                            <a href="#">Merchandise</a>
+                            <a href="#">Extras</a>
+                            <a href="#">Media</a>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+            <div class="search">
+                <i class="icofont-search-1"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="body">
+        <div class="slider">
+            <div>
+                <div class="slide-item">
+                    <img src="https://www.w3schools.com/w3images/la.jpg" width="100%" alt="">
+                    <div>
+                        <h3>Los Angeles</h3>
+                        <p>We had the best time playing at Venice Beach!</p>
+                    </div>
+                </div>
+                <div  class="slide-item">
+                    <img src="https://www.w3schools.com/w3images/ny.jpg" width="100%" alt="">
+                    <div>
+                        <h3>New York</h3>
+                        <p>The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+                <div  class="slide-item">
+                    <img src="https://www.w3schools.com/w3images/chicago.jpg" width="100%" alt="">
+                    <div>
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago - A night we won't forget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Band Section -->
+        <div id="the_band" class="section-width">
+            <h2 class="margin-item">The Band</h2>
+            <i class="margin-item">We love music</i>
+            <p class="margin-item">
+                We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="band-members">
+                <div>
+                    <span>Huỳnh Đức</span>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="60%" alt="">
+                </div>
+                <div>
+                    <span>Đình Tiến</span>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="60%" alt="">
+                </div>
+                <div>
+                    <span>Đoàn Dương</span>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="60%" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour Dates Section -->
+        <div id="tour_date">
+            <div class="section-width">
+                <div>
+                    <h2 class="margin-item" style="color: #fff;">Tour Dates</h2>
+                    <i class="margin-item" style="color: #fff;">Remember to book your tickets!</i>
+                    <br>
+                    <ul>
+                        <li>September <span class="sold-out-ticket">Sold out</span></li>
+                        <li>October <span class="sold-out-ticket">Sold out</span></li>
+                        <li style="position: relative;">November <div class="ticket-par"><span class="ticket-left">3</div></li>
+                    </ul>
+                    <div class="item-par">
+                        <div class="place-item">
+                            <img src="https://www.w3schools.com/w3images/newyork.jpg" style="vertical-align: middle;" width="100%" alt="">
+                            <div>
+                                <b>New York</b>
+                                <span>Fri 27 Nov 2016</span>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="submit-btn" name="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="https://www.w3schools.com/w3images/paris.jpg" style="vertical-align: middle;" width="100%" alt="">
+                            <div>
+                                <b>Paris</b>
+                                <span>Sat 28 Nov 2016</span>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="submit-btn" name="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" style="vertical-align: middle;" width="100%" alt="">
+                            <div>
+                                <b>San Francisco</b>
+                                <span>Sun 29 Nov 2016</span>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="submit-btn" name="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div id="contact_us">
+            <div class="section-width">
+                <h2 class="margin-item">Contact</h2>
+                <i class="margin-item">Fan? Drop a note!</i>
+                <div>
+                    <div class="address">
+                        <div>
+                            <i class="icofont-google-map"></i>
+                            <span>Chicago, US</span>
+                        </div>
+                        <div>
+                            <i class="icofont-phone"></i>
+                            <span>Phone:+84 9999</span>
+                        </div>
+                        <div>
+                            <i class="icofont-ui-message"></i>
+                            <span>Email:ducleader2003@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div>
+                                <div class="infor-btn">
+                                    <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="infor-btn">
+                                    <input type="text" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div><input type="text" name="message" placeholder="Message" required></input></div>
+                            <button class="submit-btn" style="float:right; margin:16px 0px">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location of Band -->
+        <img style="filter: grayscale(50%);" src="https://www.w3schools.com/w3images/map.jpg" width="100%" alt="location">
+    </section>
+
+    <footer>
+        <div>
+            <a href="http://facebook.com"><i class="icofont-facebook"></i></a>
+            <a href="http://instagram.com"><i class="icofont-instagram"></i></a>
+            <a href=""><i class="icofont-snapchat"></i></a>
+            <a href=""><i class="icofont-pinterest"></i></a>
+            <a href=""><i class="icofont-twitter"></i></a>
+            <a href=""><i class="icofont-youtube-play"></i></a>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
+
+    <div id="form-buy-ticket">
+        <div class="ticket-container">
+            <div class="head-form">
+                <div>
+                    <i class="icofont-ticket"></i>
+                    <h2>Tickets</h2>
+                </div>
+                <i onclick="buy_form_none()" class="icofont-ui-close btns"></i>
+            </div class="head-form">
+            <div class="body-form">
+                <form action="">
+                    <div class="infor-pay">
+                        <i class="icofont-shopping-cart"></i>
+                        <span>Tickets, $15 per person</span>
+                    </div>
+                    <input class="infor-pay-btn" type="text" name="quantity" placeholder="How many?">
+                    <div class="infor-pay">
+                        <i class="icofont-user"></i>
+                        <span>Send To</span>
+                    </div>
+                    <input class="infor-pay-btn" type="email" name="email" placeholder="Enter email">
+                    <button class="infor-pay-btn pay-btn btns" type="button" >Pay <i style="font-size: 25px;" class="icofont-check"></i></button>
+                    <div class="help-btn">
+                        <button onclick="buy_form_none()" class="btns" type="button">Close <i style="font-size: 20px;" class="icofont-close"></i></button>
+                        <span>Need <a style="color: #2196F3;" href="#form-buy-ticket">help?</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Buy Ticket Form
+    var buy_btn = document.querySelectorAll('[name="buy-ticket"]');
+    function buy_form_none(){
+        document.getElementById('form-buy-ticket').style.display = 'none';
+    }
+    buy_btn.forEach((elm)=>{
+        elm.addEventListener('click',()=>{
+            document.querySelector('#form-buy-ticket').style.display = 'block';
+        })
+    })
+    var buy_ticket_form = document.querySelector('#form-buy-ticket');
+    window.addEventListener('click',(e)=>{
+        if(e.target == buy_ticket_form){
+            buy_ticket_form.style.display = 'none';
+        }
+    })
+
+    // Autoplay Slider
+    var slider = document.querySelectorAll('.slide-item');
+    let count = 0;
+    slider[count].classList.add('autoplay');
+    var timer = setInterval(()=>{
+        if(count>0)slider[count-1].classList.remove('autoplay');
+        if(count == slider.length){
+            count = 0;
+        }
+        slider[count].classList.add('autoplay');
+        ++count;
+    },3000)
+
+
+    // Reponsive
+    var nav_item = document.querySelectorAll('.navbar nav>a,.navbar nav>div');
+    var nav_item_back = nav_item;
+    let side_bar = document.createElement('div');
+    let main_nav_bar = document.querySelector('body');
+
+    window.addEventListener('resize',(event)=>{
+        if(event.target.innerWidth <740){
+            side_bar.setAttribute('class', 'side-bar');
+            nav_item.forEach((elm)=>{
+                if(elm.textContent!='Home')side_bar.appendChild(elm);
+            })
+            main_nav_bar.appendChild(side_bar);
+            var menu_btn = document.querySelector('.search');
+            menu_btn.innerHTML = '<i class="icofont-navigation-menu" style="font-size:25px;"></i>';
+            menu_btn.setAttribute('onclick','side_bar_show()');
+        }else{
+            side_bar.remove();
+            var menu_btn = document.querySelector('.search');
+            menu_btn.innerHTML = '<i class="icofont-search-1"></i>';
+            var nav_bar_back = document.querySelector('.navbar nav');
+            nav_item.forEach((elm)=>{
+                if(elm.textContent!='Home')nav_bar_back.appendChild(elm);
+            })
+        }
+    })
+
+    let count2 = true;
+    function side_bar_show(){
+        if(count2==true){
+            side_bar.style.animation = 'slide-in-side-bar 0.5s ease-in-out';
+            side_bar.style.transform = ('translateY(0)');
+            count2 = false;
+        }else{
+            side_bar.style.animation = 'slide-out-side-bar 0.5s ease-in-out';
+            side_bar.style.transform = ('translateY(-100%)');
+            count2 = true;
+        }
+    }
+
+
+</script>
+</html>
